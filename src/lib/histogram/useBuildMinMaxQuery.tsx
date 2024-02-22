@@ -1,6 +1,4 @@
-import {
-  measures as measureFactory,
-} from "@sisense/sdk-data";
+import { measureFactory } from '@sisense/sdk-data';
 import type { DataSource, Filter } from "@sisense/sdk-data";
 import { useMemo } from "react";
 import type { HistogramDataOptions } from "../Histogram";

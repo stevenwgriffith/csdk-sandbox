@@ -1,7 +1,4 @@
-import {
-  filters as filterFactory,
-  measures as measureFactory,
-} from "@sisense/sdk-data";
+import { filterFactory, measureFactory } from '@sisense/sdk-data';
 import type { DataSource, Filter, Measure, QueryResultData } from "@sisense/sdk-data";
 import { useMemo } from "react";
 import type { HistogramDataOptions, HistogramStyleOptions } from "../Histogram";
@@ -26,7 +23,7 @@ export const useBuildQuery = ({
   filters,
   styleOptions,
 }: {
-  dataSource?: DataSource,
+  dataSource?: DataSource;
   minMaxData?: QueryResultData;
   dataOptions: HistogramDataOptions;
   filters?: Filter[];

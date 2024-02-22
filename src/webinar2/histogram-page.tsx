@@ -1,13 +1,12 @@
-import { Histogram } from '../lib/index';
-//import { Histogram } from '@stevenwgriffith/more-compose-sdk-charts';
-import { filters } from '@sisense/sdk-data';
+//import { Histogram as Histogram2 } from '../lib/index';
+import { Histogram } from '@stevenwgriffith/more-compose-sdk-charts';
+import { filterFactory } from '@sisense/sdk-data';
 import { ThemeProvider } from '@sisense/sdk-ui';
 import * as DM from './../data-models/sample-ecommerce';
 
 export const HistogramPage = () => {
-  const revenueFilter = filters.between(DM.Commerce.Revenue, 0.01, 1000);
-  const yearFilter = filters.members(DM.Commerce.Date.Years, ['2012-01-01']);
-  console.log('DEBUG ', DM.DataSource);
+  const revenueFilter = filterFactory.between(DM.Commerce.Revenue, 0.01, 1000);
+  const yearFilter = filterFactory.members(DM.Commerce.Date.Years, ['2012-01-01']);
   return (
     <ThemeProvider theme={{ chart: { backgroundColor: 'white' } }}>
       <>

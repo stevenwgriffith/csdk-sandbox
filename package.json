@@ -12,15 +12,16 @@
   "dependencies": {
     "@amcharts/amcharts5": "^5.4.10",
     "@mui/x-charts": "^6.0.0-alpha.12",
-    "@sisense/sdk-data": "^0.x.x",
-    "@sisense/sdk-ui": "^0.x.x",
-    "@stevenwgriffith/more-compose-sdk-charts": "^0.0.x",
+    "@sisense/sdk-data": "^1.x.x",
+    "@sisense/sdk-ui": "^1.x.x",
+    "@stevenwgriffith/more-compose-sdk-charts": "^0.0.5",
+    "deepmerge": "^4.3.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-plotly.js": "^2.6.0"
   },
   "devDependencies": {
-    "@sisense/sdk-cli": "^0.11.1",
+    "@sisense/sdk-cli": "^1.x.x",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
     "@types/react-plotly.js": "^2.6.0",
